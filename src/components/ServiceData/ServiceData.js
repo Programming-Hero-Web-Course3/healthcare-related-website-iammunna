@@ -11,7 +11,7 @@ const ServiceData = (props) => {
                 <div class="card h-100">
                     <img src={img} class="card-img-top" alt="..." />
                     <div class="card-body">
-                        <h5 class="card-title">{name}</h5>
+                        <h5 class="card-title ms-5">{name}</h5>
                         <p class="card-text">{description}</p>
                     </div>
                 </div>
