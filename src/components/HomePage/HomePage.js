@@ -12,7 +12,7 @@ import { BrowserRouter } from 'react-router-dom';
 const HomePage = () => {
     return (
         <div>
-            <Carousel variant="dark" fade style={{ margin: "20px" }}>
+            <Carousel variant="dark" fade style={{ margin: "20px 0" }}>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
