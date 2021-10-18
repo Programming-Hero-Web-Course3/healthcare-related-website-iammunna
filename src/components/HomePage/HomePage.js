@@ -5,6 +5,7 @@ import slider2 from '../../Media/Images/Cover/operation3.jpg'
 import slider3 from '../../Media/Images/Cover/counseling2.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
+import { BrowserRouter } from 'react-router-dom';
 
 
 
@@ -51,7 +52,7 @@ const HomePage = () => {
                 </Carousel.Item>
             </Carousel>
 
-            <hr /><hr />
+            <BrowserRouter></BrowserRouter>
         </div>
     );
 };
