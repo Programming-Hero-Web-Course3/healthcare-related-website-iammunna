@@ -15,7 +15,7 @@ const HomePage = () => {
             <Carousel variant="dark" fade style={{ margin: "20px" }}>
                 <Carousel.Item>
                     <img
-                        className="d-block w-99"
+                        className="d-block w-100"
                         src={slider1}
                         alt="First slide"
                     />

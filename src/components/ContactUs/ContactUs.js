@@ -14,7 +14,7 @@ const ContactUs = () => {
                 <Form className="mb-3 " >
                     <h2 className="text-success m-2">APPOINTMENT</h2>
                     <p className="m-2">An appointment is a formal date or plan to meet at the appointed time.</p>
-                    <Row className="mb-3 mt-5">
+                    <Row className="mb-3 mt-4">
                         <Form.Group as={Col} md="4" controlId="validationCustom01">
                             <Form.Label>First name</Form.Label>
                             <Form.Control

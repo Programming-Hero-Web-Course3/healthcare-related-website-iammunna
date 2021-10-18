@@ -6,7 +6,7 @@ import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
 const ServiceData = (props) => {
     const { id, name, img, description } = props.service;
     return (
-        <div class="row row-cols-1 row-cols-md-3 g-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
                 <div class="card h-100">
                     <img src={img} class="card-img-top" alt="..." />
