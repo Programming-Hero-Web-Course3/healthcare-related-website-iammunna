@@ -7,23 +7,53 @@ import AboutUs from './components/AboutUs/AboutUs';
 import ContactUs from './components/ContactUs/ContactUs';
 import NotFound from './components/NotFound/NotFound';
 import Footer from './components/Footer/Footer';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
+    // <div className="App">
+    //   <Header></Header>
+
+    //   <HomePage></HomePage>
+
+    //   <Services></Services>
+
+    //   <AboutUs></AboutUs>
+
+    //   <ContactUs></ContactUs>
+
+    //   <NotFound></NotFound>
+    //   <Footer></Footer>
+    // </div>
+
+    <BrowserRouter>
       <Header></Header>
+      <Switch>
 
-      <HomePage></HomePage>
+        <Route exact path="/">
+          <HomePage></HomePage>
+        </Route>
 
-      <Services></Services>
+        <Route exact path="/home">
+          <HomePage></HomePage>
+        </Route>
 
-      <AboutUs></AboutUs>
+        <Route exact path="/services">
+          <Services></Services>
+        </Route>
 
-      <ContactUs></ContactUs>
+        <Route exact path="/contact">
+          <ContactUs></ContactUs>
+        </Route>
 
-      <NotFound></NotFound>
-      <Footer></Footer>
-    </div>
+        <Route exact path="/about">
+          <AboutUs></AboutUs>
+        </Route>
+
+
+
+      </Switch>
+    </BrowserRouter>
   );
 }
 
