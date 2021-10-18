@@ -15,7 +15,7 @@ const AboutUs = () => {
             </div>
             <div >
                 <img src="" alt="" />
-                <div className="m-5">
+                <div className="m-4">
                     <h2>WELCOME TO OUR <span className="text-success">MEDICAL</span> </h2>
                     <p>Medical services means medical, surgical, dental, x-ray, ambulance, hospital, professional nursing, and funeral services, and includes the cost of eyeglasses, hearing aids, pharmaceuticals, orthopedics, and prosthetic devices.</p>
                     <div className="d-flex justify-content-evenly m-5">

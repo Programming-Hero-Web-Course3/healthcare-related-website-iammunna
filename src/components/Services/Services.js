@@ -14,7 +14,7 @@ const Services = () => {
     return (
         <div style={{ marginTop: "50px" }}>
             <Container>
-                <Row xs={1} md={3} className="g-4">
+                <Row xs={1} md={3} className="g-3">
                     {
                         services.map(service => <ServiceData service={service}></ServiceData>)
                     }

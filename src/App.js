@@ -23,6 +23,7 @@ function App() {
 
       <NotFound></NotFound>
       <Footer></Footer>
+      <hr />
     </div>
   );
 }
