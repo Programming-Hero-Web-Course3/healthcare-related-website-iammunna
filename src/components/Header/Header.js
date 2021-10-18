@@ -9,7 +9,7 @@ const Header = () => {
             <header>
                 <Card className="  mb-2">
                     <Card.Header>
-                        <small className="text-muted"><FontAwesomeIcon icon={faCalendarAlt} /> Opening Hours:Saturday to  Monday- 7am to 11pm </small>
+                        <small className="text-muted"><FontAwesomeIcon icon={faCalendarAlt} /> Opening Hours: Saturday to  Monday- 7am to 11pm </small>
                         <br />
                     </Card.Header>
                 </Card>
@@ -36,6 +36,7 @@ const Header = () => {
                                     aria-label="Search"
                                 />
                                 <Button variant="outline-light">Search</Button>
+                                <Button className="ms-3" variant="outline-light">SignUp</Button>
                             </Form>
                         </Navbar.Collapse>
                     </Container>
