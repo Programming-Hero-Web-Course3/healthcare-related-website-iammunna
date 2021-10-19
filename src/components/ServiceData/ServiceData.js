@@ -15,7 +15,7 @@ const ServiceData = (props) => {
                     <h5 class="card-title">{name}</h5>
                     <p class="card-text">{description}</p>
 
-                    <Link to={`/bookig/${id}` }>
+                    <Link to={`/service/${id}`}>
                         <Button variant="outline-success border-2"> <span>Book {name}</span>  <Button variant="success"><FontAwesomeIcon icon={faArrowAltCircleRight} /></Button></Button>
                     </Link>
                 </div>

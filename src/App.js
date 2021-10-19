@@ -9,14 +9,14 @@ import NotFound from './components/NotFound/NotFound';
 import Footer from './components/Footer/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import LogIn from './components/LogIn/LogIn/LogIn';
-import Booking from './components/Booking/Booking/Booking';
 import AuthProvider from './contexts/AuthProvider';
 import PrivateRoute from './components/LogIn/PrivateRoute/PrivateRoute';
 import SignUp from './components/Form/SignUp/SignUp';
+import ServiceDetails from './components/ServiceDetails/ServiceDetails';
 
 function App() {
   return (
-    
+
 
     <AuthProvider>
       <Router>
@@ -39,16 +39,16 @@ function App() {
             <Services></Services>
           </Route>
 
-          <Route exact path="/contact">
+          <PrivateRoute exact path="/contact">
             <ContactUs></ContactUs>
-          </Route>
+          </PrivateRoute>
 
           <Route exact path="/about">
             <AboutUs></AboutUs>
           </Route>
 
-          <PrivateRoute path="/bookig/:serviceId">
-            <Booking></Booking>
+          <PrivateRoute path="/service/:serviceId">
+            <ServiceDetails></ServiceDetails>
           </PrivateRoute>
 
           <Route path="/signup">
@@ -60,7 +60,9 @@ function App() {
           </Route>
 
         </Switch>
+        <Footer></Footer>
       </Router>
+
     </AuthProvider>
   );
 }

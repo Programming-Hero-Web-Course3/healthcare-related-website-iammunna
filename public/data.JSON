@@ -34,29 +34,5 @@
         "img": "https://i.ytimg.com/vi/eDmlWAaDxVg/maxresdefault.jpg",
         "name": " Heart Implants ",
         "description": "An implantable cardioverter-defibrillator (ICD) is a small battery-powered device placed in your chest to detect and stop abnormal heartbeats (arrhythmias). An ICD continuously monitors your heartbeat and delivers electric shocks, when needed, to restore a normal heart rhythm."
-    },
-    {
-        "id": 107,
-        "img": "https://cdn.crello.com/api/media/small/326484818/stock-photo-pharmacist-holding-jar-pills-while",
-        "name": " Pharmaceutical Help Advice ",
-        "description": "Pharmacists are experts in medicines who can help you with minor health concerns. As qualified healthcare professionals, they can offer clinical advice and over-the-counter medicines for a range of minor illnesses, such as coughs, colds, sore throats, tummy trouble and aches and pains."
-    },
-    {
-        "id": 108,
-        "img": "https://marketbusinessnews.com/wp-content/uploads/2021/01/benefits-from-physical-therapy.jpg",
-        "name": " Physical Therapy ",
-        "description": "Physical therapy, also known as physiotherapy, is one of the allied health professions. It is provided by physical therapists who promote, maintain, or restore health through physical examination, diagnosis, prognosis, patient education, physical intervention, rehabilitation, disease prevention and health promotion."
-    },
-    {
-        "id": 109,
-        "img": "https://www.daysoftheyear.com/wp-content/uploads/x-ray-day.jpg",
-        "name": " X-RAy Analysis ",
-        "description": "X-ray crystallography is the experimental science determining the atomic and molecular structure of a crystal, in which the crystalline structure causes a beam of incident X-rays to diffract into many specific directions."
-    },
-    {
-        "id": 110,
-        "img": "https://www.journalajrs.com/public/journals/93/homepageImage_en_US.jpg",
-        "name": " Medical Surgery ",
-        "description": " Surgery is an invasive technique with the fundamental principle of physical intervention on organs/organ systems/tissues for diagnostic or therapeutic reasons. As a general rule, a procedure is considered surgical when it involves cutting of a person's tissues or closure of a previously sustained wound."
     }
 ]

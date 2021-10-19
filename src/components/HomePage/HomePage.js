@@ -5,7 +5,7 @@ import slider2 from '../../Media/Images/Cover/operation3.jpg'
 import slider3 from '../../Media/Images/Cover/counseling2.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Link } from 'react-router-dom';
 import Services from '../Services/Services';
 import AboutUs from '../AboutUs/AboutUs';
 import ContactUs from '../ContactUs/ContactUs';
@@ -26,7 +26,7 @@ const HomePage = () => {
                         <h5>Welcome to our <span className="text-success">Online Medical</span> services</h5>
                         <h2 className="">Your <span className="text-success">Health</span> Is Important to us</h2>
                         <p>The word health refers to a state of complete emotional and physical well-being. Healthcare exists to help people maintain this optimal state of health.</p>
-                        <Button variant="outline-success border-2"> <span>Our Services</span>  <Button variant="success"><FontAwesomeIcon icon={faArrowAltCircleRight} /></Button></Button>
+                        <Button variant="outline-success border-2" as={Link} to="/services"> <span>Our Services</span>  <Button variant="success"><FontAwesomeIcon icon={faArrowAltCircleRight} /></Button></Button>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -38,7 +38,7 @@ const HomePage = () => {
                     <Carousel.Caption>
                         <h2> Thinking of <span className="text-success">taking</span> services of ours<span className="text-success">?</span></h2>
                         <p>Medical services means medical, surgical, dental, x-ray, ambulance, hospital, professional nursing, and funeral services, and includes the cost of eyeglasses, hearing aids, pharmaceuticals, orthopedics, and prosthetic devices.</p>
-                        <Button variant="outline-success border-2"> <span className="text-light"> Contact US Now</span>  <Button variant="success"><FontAwesomeIcon icon={faArrowAltCircleRight} /></Button></Button>
+                        <Button variant="outline-success border-2" as={Link} to="/contact"> <span className="text-light"> Contact US Now</span>  <Button variant="success"><FontAwesomeIcon icon={faArrowAltCircleRight} /></Button></Button>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -59,7 +59,6 @@ const HomePage = () => {
 
             <AboutUs></AboutUs>
 
-            <ContactUs></ContactUs>
 
         </div>
 
