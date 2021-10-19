@@ -3,7 +3,9 @@ import React from 'react';
 const Footer = () => {
     return (
         <div>
-            <h1>i am Footer</h1>
+            <footer style={{ padding: "10px", backgroundColor: "green", color: "white", marginTop: "20px" }}>
+                <p>Copyright &copy; 2022, All Rights  Reserved</p>
+            </footer>
         </div>
     );
 };

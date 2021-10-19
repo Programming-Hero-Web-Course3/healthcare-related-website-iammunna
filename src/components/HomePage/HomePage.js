@@ -52,7 +52,6 @@ const HomePage = () => {
             </Carousel>
 
             <hr /><hr />
-            <h1>i am HomPage</h1>
         </div>
     );
 };
