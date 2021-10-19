@@ -6,6 +6,9 @@ import slider3 from '../../Media/Images/Cover/counseling2.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
 import { BrowserRouter } from 'react-router-dom';
+import Services from '../Services/Services';
+import AboutUs from '../AboutUs/AboutUs';
+import ContactUs from '../ContactUs/ContactUs';
 
 
 
@@ -52,8 +55,15 @@ const HomePage = () => {
                 </Carousel.Item>
             </Carousel>
 
-            <BrowserRouter></BrowserRouter>
+            <Services></Services>
+
+            <AboutUs></AboutUs>
+
+            <ContactUs></ContactUs>
+
         </div>
+
+
     );
 };
 

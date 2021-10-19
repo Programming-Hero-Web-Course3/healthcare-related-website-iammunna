@@ -7,53 +7,61 @@ import AboutUs from './components/AboutUs/AboutUs';
 import ContactUs from './components/ContactUs/ContactUs';
 import NotFound from './components/NotFound/NotFound';
 import Footer from './components/Footer/Footer';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import LogIn from './components/LogIn/LogIn/LogIn';
+import Booking from './components/Booking/Booking/Booking';
+import AuthProvider from './contexts/AuthProvider';
+import PrivateRoute from './components/LogIn/PrivateRoute/PrivateRoute';
+import SignUp from './components/Form/SignUp/SignUp';
 
 function App() {
   return (
-    // <div className="App">
-    //   <Header></Header>
+    
 
-    //   <HomePage></HomePage>
+    <AuthProvider>
+      <Router>
+        <Header></Header>
+        <Switch>
 
-    //   <Services></Services>
+          <Route exact path="/">
+            <HomePage></HomePage>
+          </Route>
 
-    //   <AboutUs></AboutUs>
+          <Route exact path="/home">
+            <HomePage></HomePage>
+          </Route>
 
-    //   <ContactUs></ContactUs>
+          <Route exact path="/login">
+            <LogIn></LogIn>
+          </Route>
 
-    //   <NotFound></NotFound>
-    //   <Footer></Footer>
-    // </div>
+          <Route exact path="/services">
+            <Services></Services>
+          </Route>
 
-    <BrowserRouter>
-      <Header></Header>
-      <Switch>
+          <Route exact path="/contact">
+            <ContactUs></ContactUs>
+          </Route>
 
-        <Route exact path="/">
-          <HomePage></HomePage>
-        </Route>
+          <Route exact path="/about">
+            <AboutUs></AboutUs>
+          </Route>
 
-        <Route exact path="/home">
-          <HomePage></HomePage>
-        </Route>
+          <PrivateRoute path="/bookig/:serviceId">
+            <Booking></Booking>
+          </PrivateRoute>
 
-        <Route exact path="/services">
-          <Services></Services>
-        </Route>
+          <Route path="/signup">
+            <SignUp></SignUp>
+          </Route>
 
-        <Route exact path="/contact">
-          <ContactUs></ContactUs>
-        </Route>
+          <Route to="*">
+            <NotFound></NotFound>
+          </Route>
 
-        <Route exact path="/about">
-          <AboutUs></AboutUs>
-        </Route>
-
-
-
-      </Switch>
-    </BrowserRouter>
+        </Switch>
+      </Router>
+    </AuthProvider>
   );
 }
 
